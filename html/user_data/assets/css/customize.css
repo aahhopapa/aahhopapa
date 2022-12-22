@@ -1,1 +1,223 @@
 /* カスタマイズ用CSS */
+
+/* 메뉴 닫기  */
+/* ec-drawerRoleClose is_active */
+
+
+/* 메뉴 펼쳤을때 */
+/* ec-drawerRole is_active */
+
+
+/* 홈 화면 */
+/* ec-layoutRole */
+    /* 헤더 */
+    /* ec-layoutRole__header : header.twig */
+        /* 헤더 왼쪽 네비게이션 */
+        /* ec-headerNaviRole */
+            /* nav_sp.twig */
+            
+        /* 헤더 중앙 로고 */
+        /* ec-headerRole */
+        
+        /* 헤더 오른쪽 */
+        /* ec-headerRole */
+        
+        /* .ec-cartNaviWrap {
+            position: fixed; } */
+
+        /* .ec-cartNavi {
+            position: fixed;
+        } */
+        .ec-headerNaviRole .ec-headerNaviRole__right .ec-headerRole__navSP .ec-cartNaviWrap {
+            display: none; }
+        
+        /* .ec-headerNaviRole__right .ec-headerRole__navSP .ec-headerNavSP{
+
+        } */
+    
+    /* 콘텐츠 */
+    /* ec-layoutRole__contents */
+
+    /* 풋터 */
+    /* ec-layoutRole__footer */
+
+@media only screen and (min-width: 768px) {
+    
+}
+
+
+
+/* ec-role */
+
+
+/* ec-role */
+
+
+
+
+.ec-headerSearch .ec-headerSearch__category .ec-select select {
+    color: pink;
+}
+.ec-headerNavSP {
+    color: pink;
+}
+.ec-headerTitle .ec-headerTitle__title a {
+    color: pink;    
+}
+
+.ec-headerNav .ec-headerNav__itemIcon {
+    color: pink;    
+}
+
+.ec-drawerRole {
+    background-color: pink;
+}
+
+.ec-drawerRole .ec-headerCategoryArea .ec-headerCategoryArea__heading {
+    color: pink;    
+}
+
+.ec-drawerRole .ec-headerCategoryArea .ec-itemNav__nav li a {
+    color: pink;    
+}
+
+.ec-drawerRole .ec-headerCategoryArea .ec-itemNav__nav li a {
+    color: pink;    
+}
+
+.ec-drawerRole .ec-headerCategoryArea .ec-itemNav__nav li ul li ul li a {
+    color: pink;    
+}
+
+.ec-drawerRoleClose {
+    color: pink;    
+}
+
+.ec-eyecatchRole .ec-eyecatchRole__intro {
+    color: black;    
+}
+
+.ec-inlineBtn--top {
+    color: pink;    
+}
+
+.ec-inlineBtn--top:focus, .ec-inlineBtn--top.focus {
+    color: white;
+    background-color: pink;
+    border-color: pink; }
+.ec-inlineBtn--top:hover {
+    color: white;
+    background-color: pink;
+    border-color: pink; }
+.ec-inlineBtn--top:active, .ec-inlineBtn--top.active,
+  .open > .ec-inlineBtn--top.dropdown-toggle {
+    color: white;
+    background-color: pink;
+    background-image: none;
+    border-color: pink; }
+
+.ec-inlineBtn--top:active:hover, .ec-inlineBtn--top:active:focus, .ec-inlineBtn--top:active.focus, .ec-inlineBtn--top.active:hover, .ec-inlineBtn--top.active:focus, .ec-inlineBtn--top.active.focus,
+.open > .ec-inlineBtn--top.dropdown-toggle:hover,
+.open > .ec-inlineBtn--top.dropdown-toggle:focus,
+.open > .ec-inlineBtn--top.dropdown-toggle.focus {
+    color: white;
+    background-color: pink;
+    border-color: pink; }
+.ec-inlineBtn--top.disabled:hover, .ec-inlineBtn--top.disabled:focus, .ec-inlineBtn--top.disabled.focus, .ec-inlineBtn--top[disabled]:hover, .ec-inlineBtn--top[disabled]:focus, .ec-inlineBtn--top[disabled].focus,
+  fieldset[disabled] .ec-inlineBtn--top:hover,
+  fieldset[disabled] .ec-inlineBtn--top:focus,
+  fieldset[disabled] .ec-inlineBtn--top.focus {
+    background-color: pink;
+    border-color: pink; }
+
+.ec-blockBtn--top {
+    background-color: pink;
+    border-color: pink;
+}
+
+.ec-blockBtn--top:focus, .ec-blockBtn--top.focus {
+    color: white;
+    background-color: pink;
+    border-color: pink; }
+.ec-blockBtn--top:hover {
+    color: white;
+    background-color: pink;
+    border-color: pink; }
+.ec-blockBtn--top:active, .ec-blockBtn--top.active,
+  .open > .ec-blockBtn--top.dropdown-toggle {
+    color: white;
+    background-color: pink;
+    background-image: none;
+    border-color: pink; }
+.ec-blockBtn--top:active:hover, .ec-blockBtn--top:active:focus, .ec-blockBtn--top:active.focus, .ec-blockBtn--top.active:hover, .ec-blockBtn--top.active:focus, .ec-blockBtn--top.active.focus,
+    .open > .ec-blockBtn--top.dropdown-toggle:hover,
+    .open > .ec-blockBtn--top.dropdown-toggle:focus,
+    .open > .ec-blockBtn--top.dropdown-toggle.focus {
+      color: white;
+      background-color: pink;
+      border-color: pink; }
+.ec-blockBtn--top.disabled:hover, .ec-blockBtn--top.disabled:focus, .ec-blockBtn--top.disabled.focus, .ec-blockBtn--top[disabled]:hover, .ec-blockBtn--top[disabled]:focus, .ec-blockBtn--top[disabled].focus,
+  fieldset[disabled] .ec-blockBtn--top:hover,
+  fieldset[disabled] .ec-blockBtn--top:focus,
+  fieldset[disabled] .ec-blockBtn--top.focus {
+    background-color: pink;
+    border-color: pink; }
+.ec-blockBtn--top .badge {
+    color: pink;
+    background-color: white; }
+
+.ec-secHeading {
+    margin-bottom: 15px;
+    color: pink; }
+
+.ec-secHeading--tandem {
+    margin-bottom: 15px;
+    color: pink;
+    text-align: center; }
+
+.ec-topicRole .ec-topicRole__listItemTitle {
+    margin-top: .5em;
+    font-size: 14px;
+    color: pink; }
+
+
+.ec-newsRole .ec-newsRole__newsDate {
+    display: block;
+    margin: 15px 0 5px;
+    font-size: 12px;
+    color: pink; }
+
+
+.ec-categoryRole {
+    padding: 40px 0;
+    color: pink;
+    background: #F8F8F8; }
+
+.ec-newItemRole .ec-newItemRole__listItem:not(:first-child) a {
+    color: pink; }
+
+.ec-inlineBtn--top .badge {
+    color: pink;
+    background-color: white; }
+
+.ec-headerNav .ec-headerNav__itemLink {
+    color: pink;    
+}
+    
+.ec-drawerRole .ec-headerLinkArea {
+    background: pink; 
+}
+
+.ec-cartNavi {
+    color: pink;
+}
+
+.ec-footerRole {
+    border-top: 1px solid #7d7d7d;
+    margin-top: 30px;
+    background: pink;
+}
+
+.ec-headerSearch .ec-headerSearch__category .ec-select.ec-select_search {
+    background: pink;
+}
