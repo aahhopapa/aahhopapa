@@ -15,17 +15,8 @@ file that was distributed with this source code.
         <div class="header-left header-child">
             <div class="header-item-group">
                 {{ include('Block/nav_sp.twig') }}
-
                 <div class="product item">
-                    {#{{ include('Block/product.twig') }}#}
-                </div>
-                <span class="item">&nbsp;|&nbsp;</span>
-                <div class="guide item">
-                    {#{{ include('Block/guide.twig') }}#}
-                </div>
-                <span class="item">&nbsp;|&nbsp;</span>
-                <div class="guide item">
-                   {# {{ include('Block/contact.twig') }}#}
+                    {{ render(path('block_search_product')) }}
                 </div>
             </div>
         </div>
@@ -45,7 +36,6 @@ file that was distributed with this source code.
             <div class="login item">
                 {{ include('Block/login.twig') }}
             </div>  
-            <span class="login item">&nbsp;|&nbsp;</span>
             <div class="mypage item">
                 {#{{ include('Block/mypage.twig') }}#}
             </div> 

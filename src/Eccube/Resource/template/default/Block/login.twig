@@ -17,6 +17,7 @@ file that was distributed with this source code.
                 <span class="ec-headerNav__itemLink">{{ 'マイページ'|trans }}</span>
             </a>
         </div>
+        <span class="login item">&nbsp;|&nbsp;</span>
         {% if BaseInfo.option_favorite_product %}
             <div class="ec-headerNav__item">
                 <a href="{{ url('mypage_favorite') }}">
@@ -38,6 +39,7 @@ file that was distributed with this source code.
                 <span class="ec-headerNav__itemLink">{{ '新規会員登録'|trans }}</span>
             </a>
         </div>
+        <span class="login item">&nbsp;|&nbsp;</span>
         {% if BaseInfo.option_favorite_product %}
             <div class="ec-headerNav__item">
                 <a href="{{ url('mypage_favorite') }}">
