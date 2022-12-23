@@ -17,12 +17,18 @@ file that was distributed with this source code.
             {{ include('Block/nav_sp.twig') }}
         </div>
     </div>
-    <div class="ec-headerNaviRole__right">
+    <div class="ec-headerNaviRole__middle">
         <div class="ec-headerNaviRole__nav">
-            {{ include('Block/login.twig') }}
+            {#{{ include('Block/login.twig') }}#}
+            {{ include('Block/logo.twig') }}
         </div>
+    </div>
+    <div class="ec-headerNaviRole__right">
+       {# <div class="ec-headerNaviRole__nav">
+            {{ include('Block/login.twig') }}
+        </div> 
         <div class="ec-headerRole__cart">
             {{ include('Block/cart.twig') }}
-        </div>
+        </div>#}
     </div>
 </div>

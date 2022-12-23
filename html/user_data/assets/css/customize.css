@@ -1,5 +1,412 @@
 /* カスタマイズ用CSS */
 
+/* 新エリア
+----------------------- */
+.middle_area {
+    width:100%;
+    text-align: right;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .middle_area .click_area_middle{
+    display: inline-block
+  }
+  
+  .middle_area .click_area_middle a{
+    color: #000;
+    font-weight: bold;
+  }
+  
+    
+  .header-left .contact {
+    display: block;
+  }
+  .header-left .contact span {
+    color: #000;
+    font-weight: bold;
+  }
+  
+  
+  
+  /* ヘッダー切替　--------------------------- */
+  
+  .logo-header{
+    align-items: center;
+    width: 80%;
+  }
+  
+  .ec-headerNaviRole img {
+    width: 70%;
+  }
+
+  /* SP */
+  .header-left {
+    flex-basis: 20%; 
+  }
+  .header-center {
+    flex-basis: 100%; 
+  }
+  .header-right {
+    flex-basis: 20%;
+  }
+  
+  .header-left .item{
+    display: none;
+  }
+  
+  .header-right .login,
+  .header-right .mypage,
+  .header-right .pc-search {
+    display: none;
+  }
+  
+  .middle-header-sp {
+    padding: 0px 13px;
+    display:block;
+  }
+  
+  .under-header-sp {
+    padding: 7px;
+    display:block;
+  }
+  
+  .middle-header-sp {
+    text-align: right;
+  }
+  
+  .middle-header-sp .item{
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .middle-header-sp .item span {
+    color: #393939;
+    font-weight: bold;
+  }
+  
+  
+  
+  .search-icon {
+    display:block;
+  }
+  .search-label {
+    display:none;
+  }
+  
+  
+  /* PC */
+  @media only screen and (min-width: 768px) {
+    .header-child {
+      flex-basis: 33%; 
+    }
+    .logo-header{
+      align-items: center;
+      width: 100%;
+    }
+  
+    .header-left .item{
+      display: inline-block;
+    }
+  
+    .header-right {
+      text-align: right;
+    }
+  
+    .header-right .login ,
+    .header-right .mypage {
+      display: inline-block;
+      vertical-align: middle;
+      padding:6px;
+    }
+    .header-right .cart{
+      display: inline-block;
+      vertical-align: middle;
+      padding:8px;
+    }
+    
+    .header-child img {
+      max-width: 350px;
+      width:100%;
+    }
+  
+    .header-right .mypage span,
+    .header-right .login span {
+      color: #000;
+      font-weight: bold;
+    }
+  
+  
+    .header-right .pc-search {
+      display: block;
+    }
+  
+    .middle-header-sp,
+    .under-header-sp {
+      display:none;
+    }
+    
+    .search-icon {
+      display:none;
+    }
+    .search-label {
+      display:block;
+      width: 60px;
+    }
+  }
+  
+  
+  
+  /* =================================
+  　ロゴ（logo.twig）
+  ================================= */
+  
+  /* ----------------------------
+  　ロゴエリア
+  ---------------------------- */
+  /* .logo_area {
+    position: relative;
+    z-index: 15;
+    width: 100%;
+    height: 72px;
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    background: #fff;
+  } */
+  
+  /* .logo_area .logo {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    display: inline-block;
+    z-index: 1;
+  } */
+  
+  /* ロゴ画像 */
+  /* .logo_area .logo img {
+    width: 100%;
+  } */
+  
+  .logo_area-pc {
+    position: relative;
+    z-index: 15;
+    width: 100%;
+    height: 72px;
+    /* 高さ指定 */
+    transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    background: #fff;
+  }
+  
+  .logo_area-pc .logo {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  
+  .logo_area .item_area {
+    flex: 1 1 0;
+  }
+  /* アイコン
+  ----------------------- */
+  .logo_area .click_area {
+    display: inline-block;
+    color: #8c8c8c;
+    /* ★アイコン・テキストの色 */
+    text-shadow: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 15px 0px;
+    position: relative;
+  }
+  
+  .logo_area .click_area a {
+    color: #8c8c8c;
+    /* ★アイコン・テキストの色 */
+  }
+  
+  .logo_area .click_area i {
+    font-size: 22px;
+  }
+  
+  .logo_area .click_area span {
+    font-size: 12px;
+  }
+  
+  .logo_area .click_area i,
+  .logo_area .click_area span {
+    display: block;
+  }
+  
+  .logo_area .click_area i {
+    padding-bottom: 3px;
+  }
+  
+  .logo-header .click_area {
+    display: inline-block;
+    color: #8c8c8c;
+    /* ★アイコン・テキストの色 */
+    text-shadow: none;
+    cursor: pointer;
+    text-align: center;
+    /* padding: 15px 0px; */
+    position: relative;
+  }
+  
+  .logo-header .click_area a {
+    color: #8c8c8c;
+    /* ★アイコン・テキストの色 */
+  }
+  
+  .logo-header .click_area i {
+    font-size: 30px;
+  }
+  
+  .logo-header .click_area span {
+    font-size: 8px;
+  }
+  
+  .logo-header .click_area i,
+  .logo-header .click_area span {
+    display: block;
+  }
+  
+  .logo-header .click_area i {
+    padding-bottom: 3px;
+  }
+  
+  
+  /* 
+  /* ヘッダー切替　PC ----------------------------*/
+  /* @media only screen and (min-width: 768px) { */
+    /* .logo-header-sp {
+      display:none;
+    } */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 14;
+      width: 100%;
+      background-color: #fff;
+      border-bottom: solid #ffcb5c;
+    }
+  
+    .logo-header {
+      display:flex;
+      padding:7px;
+      width: 100%;
+    }
+      
+    .header-child-pc .item{
+      display: inline-block
+    }
+  
+    .header-pc-logo {
+      text-align: center;
+    }
+  
+    .logo_area {
+      height: 54px;
+    }
+  
+    .logo_area .logo {
+      left: 50%;
+    }
+  
+    .logo {
+      text-align: center;
+    }
+  
+    /* 左右エリアのレイアウト */
+    .logo_area .btn_menu {
+      display: flex;
+    }
+  
+    .logo_area .item_area {
+      flex: 1 1 0;
+    }
+  
+    .logo_area .item_area .item {
+      display: inline;
+    }
+  
+    .logo_area .item_area.left_area {
+      text-align: left;
+    }
+  
+    .logo_area .item_area.right_area {
+      text-align: right;
+      margin-right: 5%;
+    }
+  
+    /* オンマウス時 */
+    .logo_area:hover {
+      background: rgba(255, 255, 255, 1);
+    }
+  
+    
+  @media only screen and (min-width: 768px) {
+  
+    /* ロゴエリアオンマウス時 */
+    .logo-header .click_area {
+      color: #8c8c8c;
+      /* ★アイコン・テキストの色 */
+      text-shadow: none;
+    }
+  
+  
+    .logo-header a:hover,
+    .logo_area .click_area:hover {
+      text-decoration: none;
+    }
+    .logo-header .click_area i,
+    .logo-header .click_area span {
+      display: block;
+    }
+  
+    .logo-header .click_area i {
+      font-size: 22px;
+    }
+    .logo-header .click_area span {
+      font-size: 12px;
+    }
+    
+    .logo-header {
+      padding:8px;
+    }
+  }
+  
+  
+    
+    /* 新エリア
+  ----------------------- */
+    /* .middle-area-pc {
+      width:100%;
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  
+    .middle-area-pc-left {
+      text-align: left;
+    }
+  
+    .middle-area-pc-right {
+      text-align: right;
+    } */
+  
+  /* } */
+  
+ /*------------------------------------------------------------------ */
+
 /* 메뉴 닫기  */
 /* ec-drawerRoleClose is_active */
 
@@ -15,21 +422,82 @@
         /* 헤더 왼쪽 네비게이션 */
         /* ec-headerNaviRole */
             /* nav_sp.twig */
+            .ec-layoutRole__header {
+                padding-bottom: 30px;
+            }
+            .ec-headerNaviRole .ec-headerNaviRole__left {
+                width: auto;
+            }
+            
+            /* 헤더 가운데 */
+            /* .ec-headerNaviRole__middle */
+            .ec-headerNaviRole__middle {
+
+            }
+            .ec-headerTitle img {
+                width: 70%;
+            }
+            
+            /* 헤더 오른쪽 */
+            /* ec-headerRole */
+            .ec-headerNaviRole .ec-headerNaviRole__right {
+                padding-right: 0px;
+                width: calc(100% * 1 / 9);
+            }
+            .ec-cartNavi .ec-cartNavi__icon {
+                padding: 10px 20px 0 20px
+            }
+            /*.ec-headerRole__cart {
+                cursor: pointer;
+                position: fixed;
+                z-index: 1000;
+            }
+            .ec-headerRole__cart .ec-cartNaviWrap .ec-cartNavi{
+                position: fixed; 
+                padding: 0 0 0 10px;
+                margin-top: -15px;
+                color: blue;
+            }
+            .ec-cartNavi .ec-cartNavi__icon {
+                font-size: 30px;
+            }
+
+            .ec-cartNaviNull {
+                position: fixed; 
+            }*/
+            @media only screen and (min-width: 768px)  {
+                .ec-headerNaviRole {
+                    padding-right: 40px
+                }
+                .ec-headerNaviRole .ec-headerNaviRole__right {
+                    padding-right: 100px;
+                }
+                /*.ec-headerRole__cart .ec-cartNaviWrap .ec-cartNavi {
+                    min-width: 100px;
+                }*/
+                .ec-cartNavi {
+                    justify-content: start;
+                    padding: 0;
+                    width: 150px;
+                }
+                .ec-cartNavi .ec-cartNavi__price {
+                    padding-top: 10px;
+                }
+            }
+
+            /* .ec-headerRole__cart {
+                position: fixed;
+            } */
             
         /* 헤더 중앙 로고 */
         /* ec-headerRole */
         
-        /* 헤더 오른쪽 */
-        /* ec-headerRole */
-        
-        /* .ec-cartNaviWrap {
-            position: fixed; } */
 
         /* .ec-cartNavi {
             position: fixed;
         } */
-        .ec-headerNaviRole .ec-headerNaviRole__right .ec-headerRole__navSP .ec-cartNaviWrap {
-            display: none; }
+        /* .ec-headerNaviRole .ec-headerNaviRole__right .ec-headerRole__navSP .ec-cartNaviWrap {
+            display: none; } */
         
         /* .ec-headerNaviRole__right .ec-headerRole__navSP .ec-headerNavSP{
 
@@ -208,9 +676,6 @@
     background: pink; 
 }
 
-.ec-cartNavi {
-    color: pink;
-}
 
 .ec-footerRole {
     border-top: 1px solid #7d7d7d;

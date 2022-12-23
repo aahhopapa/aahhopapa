@@ -8,16 +8,71 @@ http://www.ec-cube.co.jp/
 For the full copyright and license information, please view the LICENSE
 file that was distributed with this source code.
 #}
-<div class="ec-headerRole">
-    <div class="ec-headerRole__title">
-        <div class="ec-headerTitle">
-            <div class="ec-headerTitle__title">
-                <h1>
-                    <a href="{{ url('homepage') }}">
-                        {{ BaseInfo.shop_name }}
-                    </a>
-                </h1>
+<div class="header">
+    <div class="logo-header">
+
+        {# 左側 #}
+        <div class="header-left header-child">
+            <div class="header-item-group">
+                {{ include('Block/nav_sp.twig') }}
+
+                <div class="product item">
+                    {#{{ include('Block/product.twig') }}#}
+                </div>
+                <span class="item">&nbsp;|&nbsp;</span>
+                <div class="guide item">
+                    {#{{ include('Block/guide.twig') }}#}
+                </div>
+                <span class="item">&nbsp;|&nbsp;</span>
+                <div class="guide item">
+                   {# {{ include('Block/contact.twig') }}#}
+                </div>
+            </div>
+        </div>
+        
+        {# 中央ロゴ #}
+        <div class="header-center header-child">
+            <div class="logo">
+                <a href="{{ url('homepage') }}">
+                    <img src="{{ asset('assets/img/top/logo_b.png') }}" alt="{{ BaseInfo.shop_name }}" />
+                </a>
+            </div>
+        </div>
+
+
+        {# 右 #}
+        <div class="header-right header-child">
+            <div class="login item">
+                {{ include('Block/login.twig') }}
+            </div>  
+            <span class="login item">&nbsp;|&nbsp;</span>
+            <div class="mypage item">
+                {#{{ include('Block/mypage.twig') }}#}
+            </div> 
+            {#<div class="cart item">#}
+            <div class="ec-headerRole__cart">
+                {{ include('Block/cart.twig') }}
+            </div>
+            <div class="pc-search">
+                {#{{ render(path('block_search_product')) }}#}
             </div>
         </div>
     </div>
+
+    <div class="middle-header-sp">
+        {#
+        <div class="login item">
+            {{ include('Block/login.twig') }}
+        </div>  
+        <span class="item">&nbsp;|&nbsp;</span>
+        <div class="mypage item">
+            {{ include('Block/mypage.twig') }}
+        </div> 
+        #}
+    </div> 
+    {#
+    <div class="under-header-sp">
+        {{ render(path('block_search_product')) }}
+    </div>
+    #}
 </div>
