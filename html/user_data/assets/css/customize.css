@@ -468,6 +468,11 @@
     color: #60d3f7;
 }
 
+.ec-categoryNaviRole {
+  border-bottom: solid #ffcb5c;
+}
+
+
 .ec-eyecatchRole .ec-eyecatchRole__intro {
     color: black;    
 }
