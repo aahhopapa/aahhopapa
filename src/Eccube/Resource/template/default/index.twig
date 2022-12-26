@@ -106,9 +106,18 @@ file that was distributed with this source code.
 {% block main %}
     <div class="ec-sliderRole">
         <div class="main_visual">
-            <div class="item slick-slide"><img src="{{ asset('assets/img/top/Roo_抱っこ紐.png') }}"></div>
-            <div class="item slick-slide"><img src="{{ asset('assets/img/top/おくるみ_スワドル.png') }}"></div>
-            <div class="item slick-slide"><img src="{{ asset('assets/img/top/授乳服.png') }}"></div>
+            <div class="item slick-slide">
+                <img class="pc" src="{{ asset('assets/img/top/Roo_抱っこ紐_banner_pc.png') }}">
+                <img class="sp" src="{{ asset('assets/img/top/Roo_抱っこ紐_banner_sp.png') }}">
+            </div>
+            <div class="item slick-slide">
+                <img class="pc" src="{{ asset('assets/img/top/おくるみ_スワドル_banner_pc.png') }}">
+                <img class="sp" src="{{ asset('assets/img/top/おくるみ_スワドル_banner_sp.png') }}">
+            </div>
+            <div class="item slick-slide">
+                <img class="pc" src="{{ asset('assets/img/top/授乳服_banner_pc.png') }}">
+                <img class="sp" src="{{ asset('assets/img/top/授乳服_banner_sp.png') }}">
+            </div>
         </div>
     </div>
 {% endblock %}
