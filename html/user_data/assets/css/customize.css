@@ -470,7 +470,7 @@
 
 .ec-drawerRole .ec-headerCategoryArea .ec-headerCategoryArea__heading {
     background-color: #fde2a6;
-    color: #60d3f7;
+    color: black;
 }
 
 .ec-drawerRole .ec-headerLinkArea {
@@ -479,7 +479,7 @@
 }
 
 .ec-drawerRole .ec-headerLinkArea .ec-headerLink__item {
-    color: #60d3f7;
+    color: black;
 }
 
 .ec-drawerRole .ec-headerCategoryArea .ec-itemNav__nav li a {
@@ -491,7 +491,7 @@
 }
 
 .ec-drawerRoleClose {
-    color: #60d3f7;
+    color: black;
 }
 
 .ec-categoryNaviRole {
@@ -513,6 +513,11 @@
 
 .ec-eyecatchRole .ec-eyecatchRole__intro {
     color: black;    
+}
+
+.ec-cartNaviIsset {
+    color: white;
+    background-color: black;
 }
 
 .ec-blockBtn--top {
@@ -557,8 +562,30 @@
   background-color: #F8F8F8;
   padding-left: 5px;
 }
-
 .ec-layoutRole__footer {
+  background-color: #f8b21a;
+}
+
+.ec-cartNaviNull {
+  background: #000;
+}
+
+.ec-cartNaviNull .ec-cartNaviNull__message {
+  background-color: #000;
+}
+.ec-footerRole {
+  border-top: 1px solid #929292;
+  background: #929292;
+}
+.ec-footerNavi {
+  color: white;
+}
+
+.ec-footerTitle {
+  color: white;
+}
+
+.ec-blockTopBtn {
   background-color: #f8b21a;
 }
 
